@@ -5,6 +5,7 @@ import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Rentals from "./Pages/Rentals";
 import Property from "./Pages/Property";
+import Contact from "./Pages/Contact";
 
 function App() {
   return (
@@ -12,17 +13,20 @@ function App() {
       <Router>
         <Navbar />
         <Switch>
-          <Route>
+          <Route exact to="/">
             <Home />
           </Route>
-          <Route>
+          <Route path="/about">
             <About />
           </Route>
-          <Route>
+          <Route path="/rentals">
             <Rentals />
           </Route>
-          <Route>
+          <Route path="/property">
             <Property />
+          </Route>
+          <Route path="/contact">
+            <Contact />
           </Route>
         </Switch>
       </Router>
