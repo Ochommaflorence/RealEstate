@@ -1,4 +1,6 @@
 import React from 'react';
+import styled, { css } from 'styled-components/macro'
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
