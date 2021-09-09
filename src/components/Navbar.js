@@ -39,6 +39,17 @@ const Navbar = () => {
                 Rentals
               </Link>
             </li>
+            <li className="nav-btn">
+                {button ? (
+                    <Link className="btn-link">
+                        <Button buttonStyle="btn--outline">SEE ME</Button>
+                    </Link>
+                ) : (
+                    <Link className="btn-link">
+                        <Button buttonStyle="btn--outline" buttonSize="btn--mobile">SEE ME</Button>
+                    </Link>
+                )}
+            </li>
           </ul>
         </div>
       </div>
