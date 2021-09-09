@@ -40,15 +40,17 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="nav-btn">
-                {button ? (
-                    <Link className="btn-link">
-                        <Button buttonStyle="btn--outline">SEE ME</Button>
-                    </Link>
-                ) : (
-                    <Link className="btn-link">
-                        <Button buttonStyle="btn--outline" buttonSize="btn--mobile">SEE ME</Button>
-                    </Link>
-                )}
+              {button ? (
+                <Link to="/sign up" className="btn-link">
+                  <Button buttonStyle="btn--outline">Sign Up</Button>
+                </Link>
+              ) : (
+                <Link to="/sign up" className="btn-link">
+                  <Button buttonStyle="btn--outline" buttonSize="btn--mobile">
+                    Sign Up{" "}
+                  </Button>
+                </Link>
+              )}
             </li>
           </ul>
         </div>
