@@ -78,3 +78,47 @@
   -ms-transition: all 0.2 ease-out;
   -o-transition: all 0.2 ease-out;
 }
+
+.blue {
+  background-color: #276afb;
+  color: #fff;
+  border: none;
+}
+
+.red {
+  background-color: #f00946;
+  color: #fff;
+  border: none;
+}
+
+.primary {
+  background-color: #242424;
+  color: #fff;
+  border: none;
+}
+
+.primary:hover {
+  background-color: #fff;
+  color: #242424;
+  border: none;
+}
+
+.green {
+  background: #25ce4a;
+  color: #fff;
+  border: none;
+}
+
+.green:hover {
+  background-color: #242424;
+}
+
+.btn-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 8px 16px;
+  height:100%;
+  width: 100%;
+}
