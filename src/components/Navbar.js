@@ -15,14 +15,14 @@ const Navbar = () => {
           <Link exact to="/" activeClassName="active" className="nav-logo">
             Florrie's Home
           </Link>
-          <ul className="nav-menu">
+          <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
-              <Link to="/" activeClassName="active" className="nav-links">
+              <Link to="/" activeClassName="active" className="nav-links" onClick={handleClick}>
                 Home
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/about" activeClassName="active" className="nav-links">
+              <Link to="/about" activeClassName="active" className="nav-links" onClick={handleClick}>
                 About
               </Link>
             </li>
@@ -31,12 +31,13 @@ const Navbar = () => {
                 to="/property"
                 activeClassName="active"
                 className="nav-links"
+                onClick={handleClick}
               >
                 Property
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/rental" activeClassName="active" className="nav-links">
+              <Link to="/rental" activeClassName="active" className="nav-links" onClick={handleClick}>
                 Rentals
               </Link>
             </li>
@@ -45,6 +46,7 @@ const Navbar = () => {
                 to="/contact"
                 activeClassName="active"
                 className="nav-links"
+                onClick={handleClick}
               >
                 Contact Us
               </Link>

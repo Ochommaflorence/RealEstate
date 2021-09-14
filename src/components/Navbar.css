@@ -72,5 +72,40 @@
 }
 
 @media screen and (max-width:960px) {
+    .nav-menu {
+        display:flex;
+        flex-direction:column;
+        width: 100%;
+        border-top: 1px solid #fff;
+        position:absolute;
+        top: 80px;
+        left: -110px;
+        opacity: 1;
+    }
+    .nav-menu .active {
+        background: #1f5156;
+        left: 0px;
+        opacity: 1;
+        transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        z-index: 1;
+}
+.navbar-icon{
+    display:block;
+    position:absolute;
+    top:0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    -webkit-transform: translate(-100%, 60%);
+    -moz-transform: translate(-100%, 60%);
+    -ms-transform: translate(-100%, 60%);
+    -o-transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #ffdd40;
+}
     
 }
