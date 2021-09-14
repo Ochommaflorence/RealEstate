@@ -7,31 +7,30 @@ import Rental from "./components/Pages/Rental";
 import Property from "./components/Pages/Property";
 import Contact from "./components/Pages/Contact";
 
-
 function App() {
   return (
-   <>
-     <Router>
-     <Navbar/>
-     <Switch>
-       <Route exact path="/">
-         <Home/>
-       </Route>
-       <Route path="/about">
-         <About/>
-       </Route>
-    <Route path="/about">
-         <Rental/>
-       </Route>
-       <Route path="/about">
-        <Property/>
-       </Route>
-       <Route path="/about">
-         <Contact/>
-       </Route>
-     </Switch>
-     </Router>
-   </>
+    <>
+      <Router>
+        <Navbar />
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/rental">
+            <Rental />
+          </Route>
+          <Route path="/property">
+            <Property />
+          </Route>
+          <Route path="/contact">
+            <Contact />
+          </Route>
+        </Switch>
+      </Router>
+    </>
   );
 }
 

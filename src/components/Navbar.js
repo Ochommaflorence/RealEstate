@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import "./Navbar.css"
 
 const Navbar = () => {
   return (
@@ -9,28 +10,28 @@ const Navbar = () => {
       <Link exact to="/" className="nav-logo">
         Florrie's Home
       </Link>
-      <ul>
-        <li>
+      <ul className="nav-menu">
+        <li className="nav-item">
         <Link to="/" className="nav-links">
         Home
       </Link>
         </li>
-        <li>
+        <li className="nav-item">
         <Link to="/about" className="nav-links">
         About
       </Link>
         </li>
-        <li>
+        <li className="nav-item">
         <Link to="/property" className="nav-links">
         Property
       </Link>
         </li>
-        <li>
-        <Link to="/rentals" className="nav-links">
+        <li className="nav-item">
+        <Link to="/rental" className="nav-links">
         Rentals
       </Link>
         </li>
-        <li>
+        <li className="nav-item">
         <Link to="/contact" className="nav-links">
         Contact Us
       </Link>
