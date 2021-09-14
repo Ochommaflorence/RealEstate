@@ -42,7 +42,23 @@
     height: 100%;
     border-bottom: 3px solid transparent;
 }
-.nav-items{
+.nav-item{
     line-height: 40px;
     margin-right: 1rem;
+}
+.nav-item::after{
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0;
+    background: transparent;
+    transition: width 0.7s ease, background-color 0.5s ease;
+    -webkit-transition: width 0.7s ease, background-color 0.5s ease;
+    -moz-transition: width 0.7s ease, background-color 0.5s ease;
+    -ms-transition: width 0.7s ease, background-color 0.5s ease;
+    -o-transition: width 0.7s ease, background-color 0.5s ease;
+}
+.nav-item:hover:after{
+    width: 100%;
+    background:#ffdd40;
 }
